@@ -10,22 +10,18 @@
 <body>
   <canvas id = "canvas"></canvas>
   <div id = "cross"><h1>+</h1></div>
-
-  <main class = "main">
-    <section id = "container">
-        <div id = "image-container" data-mouse-scroll-at = "0" data-mouse-prev-position = "0">
-          <img class = "image" id = "img-1"src = "https://images.unsplash.com/photo-1520295980358-21d438282de6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnJvd258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" draggable="false">
-          <img class = "image" id = "img-4"src = "https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJvd258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" draggable="false">
-          <img class = "image" id = "img-3"src = "https://images.unsplash.com/photo-1595729257407-e4b69b4c2650?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">
-          <img class = "image" id = "img-2"src = "https://images.unsplash.com/photo-1521684371941-49ffb6075d47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">
-          <img class = "image" id = "img-5"src = "https://plus.unsplash.com/premium_photo-1673029926899-2625d5f4b71a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">
-          <img class = "image" id = "img-6"src = "https://images.unsplash.com/photo-1609931809112-c21ba30cbcbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false"> 
-          <img class = "image" id = "img-7"src = "https://images.unsplash.com/photo-1600061945751-15ee10b39860?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false"> 
-          <img class = "image" id = "img-8"src = "https://images.unsplash.com/photo-1611078295948-10b3961e1e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">    
-        </div>
-    </section>
-  </main>
-
-  <script src = "scroller.js"></script>
+  <section id = "container" data-scroll-current-position = "0%" data-scroll-prev-position = "0%">
+      <div id = "image-container">
+        <img class = "image" id = "img-1"src = "https://images.unsplash.com/photo-1520295980358-21d438282de6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnJvd258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" draggable="false">
+        <img class = "image" id = "img-4"src = "https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJvd258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" draggable="false">
+        <img class = "image" id = "img-3"src = "https://images.unsplash.com/photo-1595729257407-e4b69b4c2650?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">
+        <img class = "image" id = "img-2"src = "https://images.unsplash.com/photo-1521684371941-49ffb6075d47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">
+        <img class = "image" id = "img-5"src = "https://plus.unsplash.com/premium_photo-1673029926899-2625d5f4b71a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">
+        <img class = "image" id = "img-6"src = "https://images.unsplash.com/photo-1609931809112-c21ba30cbcbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false"> 
+        <img class = "image" id = "img-7"src = "https://images.unsplash.com/photo-1600061945751-15ee10b39860?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false"> 
+        <img class = "image" id = "img-8"src = "https://images.unsplash.com/photo-1611078295948-10b3961e1e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyb3dufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false">    
+      </div>
+  </section>
+  <!-- <script src = "scroller.js"></script> -->
 </body>
 </html>
