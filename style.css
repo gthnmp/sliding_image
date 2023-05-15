@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box ;
+  box-sizing: border-box;
+  scroll-behavior: smooth scroll;
 }
 
 body {
@@ -55,7 +56,6 @@ body {
   height: auto;
 }
 
-
 #image-container::-webkit-scrollbar{
   display: none;
 }
@@ -64,4 +64,5 @@ body {
   height: 56vmin;
   width: 40vmin;
   object-fit: cover;
+  object-position: 0% center;
 }
